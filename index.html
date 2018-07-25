@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survay form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form" method="get" action="#">
+           <div class="rowForm">
+               <div class="labels">
+                    <label id="name-label" for="name">
+                        <sup>*</sup> Name: 
+                   </label>
+               </div>
+               <div class="inputs">
+                    <input type="text" id="name"  name="name" placeholder="Enter your name" class="input-field" required>
+                </div>
+            </div>
+            
+            <div class="rowForm">
+               <div class="labels">
+                    <label id="email-label" for="email">
+                        <sup>*</sup> Email: 
+                    </label>
+                </div>
+                <div class="inputs">
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" class="input-field" required>
+                </div>
+            </div>
+            
+            <div class="rowForm">
+               <div class="labels">
+                   <label id="age-label" for="age">
+                <sup>*</sup> Age: 
+                   </label>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="age" name="age" placeholder="Age" min="0" max="100" class="input-field" required >
+                </div>
+            </div>
+            
+            <div class="rowForm">
+               <div class="labels">
+                   <label id="role-label" for="role">
+                       Which option best describes your current role? </label>
+                </div>
+                <div class="inputs">
+                   <select name="role" id="role">
+                    <option disabled>Select an option</option>
+                    <option checked>Student</option>
+                    <option>Full time job</option>
+                    <option>Full time learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+                </div>
+            </div>
+            
+            <div class="rowForm">
+               <div class="labels">
+                   <label id="age-label" for="age">
+                <sup>*</sup> How likely is that you would recommend freeCodeCamp to a friend?: </label>
+                </div>
+                <div class="inputs">
+                    <label for="definitely">
+                        <input type="radio" name="recommendation" value="definitely" id="definitely">Definitely<br >
+                    </label> 
+                    <label for="maybe">
+                        <input type="radio" name="recommendation" value="maybe" id="maybe">Maybe<br >
+                    </label>
+                    <label for="notsure">
+                        <input type="radio" name="recommendation" value="notsure" id="notsure">Not sure<br >
+                    </label>
+                </div>
+            </div>
+            
+             <div class="rowForm">
+               <div class="labels">
+                   <label id="like-label" for="like">
+                       What do you like most in FCC: </label>
+                 </div>
+                 <div class="inputs">
+                    <select name="like" id="like">
+                        <option disabled>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open source</option>
+                    </select>
+                 </div>
+            </div>
+             
+            <div class="rowForm">
+               <div class="labels">
+                   <label id="improves">
+                   Things that should be improved in the future<br >(Check all that apply): </label>
+                </div>
+                <div class="inputs">
+                     <label for="Front-end"><input type="checkbox" name="improved" id="Front-end" value="Front-end">Front-end Projects</label><br >
+                      <label for="Back-end"><input type="checkbox" name="improved" id="Back-end" value="Front-end">Back-end Projects</label><br >
+                      <label for="Data"><input type="checkbox" name="improved" id="Data" value="Data">Data visualization</label><br >
+                      <label for="challenges"><input type="checkbox" name="improved" id="challenges" value="challenges">Challenges</label>
+                </div>
+            </div>
+            
+         <div class="rowForm">
+               <div class="labels">
+                   <label id="comments">Any Comments or Suggestions?</label>
+             </div>
+            <div class="inputs"> 
+                <textarea placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+            
+        <button type="submit" value="Submit">Submit</button> 
+            
+        </form>
+    
+    </main>
+    
+    
+    
+</body>
+</html>
